@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simple Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Monoton|Orbitron|Sedgwick+Ave+Display" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="calculator" class="clearfix">
+        <h2 id="title">Adding Machine</h2>
+        <!--output field-->
+        <div id="output">
+            <p id="input"></p>
+            <p id="result"></p>
+        </div>
+
+        <!--button field-->
+        <div id="buttons" class="clearfix">
+                <button class='red' value='ac' id="clearall">AC</button>
+                <button class='red' value='ce' id="clear">CE</button>
+                <button id='/' class="divide">&divide;</button>
+                <button id='*' class="times">&times</button>
+
+                <button id='7'>7</button>
+                <button id='8' id="8">8</button>
+                <button id='9'>9</button>
+                <button id='-'>-</button>
+
+                <button id='4'>4</button>
+                <button id='5'>5</button>
+                <button id='6'>6</button>
+                <button id='+' class="plus">+</button>
+
+
+                <button id='1'>1</button>
+                <button id='2'>2</button>
+                <button id='3'>3</button>
+
+                <button id='0' class="zeroButton" value='0'>0</button>
+                <button value='.' id="." class="dot">.</button>
+                <button id='equalButton' value='='>=</button>
+        </div>
+        <footer>
+            designed by <a href="http://deityhub.github.io" target="_blank">Ojini Chizoba</a>
+        </footer>
+    </div>
+
+        <script src="jquery/jquery.min.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

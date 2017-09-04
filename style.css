@@ -1,0 +1,129 @@
+.clearfix:before,
+.clearfix:after{
+    display: table;
+    content: "";
+}
+.clearfix:after{
+    clear: both;
+}
+body{
+    padding:0;
+    margin:0;
+    background-color: rgb(123,120,108);
+}
+#calculator{
+    box-sizing: border-box;
+    height: 450px;
+    width: 310px;
+    margin: 50px auto;
+    background-image: url('https://images.alphacoders.com/293/thumb-1920-293993.jpg');
+    background-size: contain;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 20px;
+    box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+}
+#output{
+    text-align: right;
+    width: 85%;
+    height: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: #c3c2ab;
+    color: black;
+}
+#input{
+    margin-bottom: 0;
+    margin-top: 0px;
+    padding: 5px;
+    font-size: 27px;
+    height: 25px;
+    color: black;
+}
+#input, #output, button{
+    font-family: 'Yatra One', cursive;
+}
+#result{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+    height: 25px;
+}
+button{
+  border-radius: 8px;
+  border: none;
+  background-color: #3a3a3a;
+  margin: 0 4px 10px 8px;
+  height: 40px;
+  font-size: 20px;
+  color: #fff;
+  width: 53px;
+  box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+  cursor: pointer;
+}
+#buttons {
+  font-weight: bold;
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+footer {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 280px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  width: 100%;
+  height: 40px;
+}
+
+#title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 10px 0 0 0;
+  font-family: 'Monoton', cursive;
+  font-size: 1.1em;
+}
+button:active {
+  transform: translate(0px, 3px);
+  box-shadow: none;
+}
+#equalButton {
+  position: absolute;
+  margin-left: 12px;
+  margin-top: -50px;
+  height: 90px;
+}
+.zeroButton {
+  width: 122px;
+}
+.red {
+  font-size: 14px;
+  background-color: #a72d45;
+  box-shadow: 0px 3px 0px 0px #671c2a;
+}
+button,
+button:hover,
+button:active,
+button:visited {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: white;
+  text-decoration: none !important;
+  outline: none !important;
+}
