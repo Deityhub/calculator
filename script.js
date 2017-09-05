@@ -18,22 +18,10 @@ $(document).ready(function () {
         if (opzero.includes(inputs[inputs.length - 1]) === true && input === '.') {
             console.log('duplicate dots not allowed');
 
-        }else if(opzero.includes(inputs[inputs.length - 1]) === false){
-             inputs.push(input);
-            //console.log('input added');
         }
-        else if (inputs.length === 1) {
-            if (operator.includes(input) === false) {
-                inputs.push(input);
-                console.log(input);
-            } else if (operator.includes(input)) {
-                if (input === '*' || input === '/') {
-                    console.log('Number or decimal first!')
-                } else {
-                    inputs.push(input);
+        else if (inputs.length === 1 && operator.includes(input) === false) {
+            inputs.push(input);
                     console.log(input);
-                }
-            }
         } else if (operator.includes(inputs[inputs.length - 1]) === false) {
             inputs.push(input);
             console.log(input);
