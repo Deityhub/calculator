@@ -61,9 +61,9 @@ $(document).ready(function () {
     }
     //checks the length of inputted values including the operators
     function testNum(number) {
-        if (number.length > 16) {
-            $('#input').text(number.substr(number.length - 16, 16));
-            if (number.length > 30) {
+        if (number.length > 17) {
+            $('#input').text(number.substr(number.length - 17, 17));
+            if (number.length > 17) {
                 number = "";
                 $('#input').html("Length exceeded!");
                 $('#result').html('0')
