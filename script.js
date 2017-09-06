@@ -61,27 +61,29 @@ $(document).ready(function () {
     }
     //checks the length of inputted values including the operators
     function testNum(number) {
-        if (number.length > 17) {
-            $('#input').text(number.substr(number.length - 17, 17));
+        if (number.length > 16) {
+            $('#input').text(number.substr(number.length - 16, 16));
             if (number.length > 17) {
                 number = "";
+                clear();
                 $('#input').html("Length exceeded!");
-                $('#result').html('0')
+                $('#result').html('0');
+                
             }
         }
     };
     //handles the click event of the buttons
     $('button').click(function () {
         if (this.id === 'clearall') {
-            console.log('clearing all');
+            //console.log('clearing all');
             $('#result').html('0');
             clear();
         } else if (this.id === 'clear') {
             if (inputs[inputs.length - 1] === '') {
-                console.log('go')
+                //console.log('go')
                 $('#input').html('0');
             } else {
-                console.log('clearing some');
+                //console.log('clearing some');
                 inputs.pop();
                 update();
             }
